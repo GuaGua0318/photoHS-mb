@@ -44,18 +44,25 @@ const demoSrc =
   
     const renderFooter = (image: string, index: number) => {
       return (
-        <div className='footer'>
-          <Grid columns={3} gap={8} className='tags'>
+        <div className='footer' style={{display:'scrollY'}}>
+          <div>
+            
+          </div>
+          <Grid columns={3} gap={8} className='tags' style={{height:'50px',lineHeight:'50px'}}>
           <Grid.Item>
-           <div>赞</div>
+           <div>
+           <i className="iconfont" style={{fontSize:'25px'}}>&#xe870;<span style={{fontSize:'15px'}}>100</span></i>
+           </div>
           </Grid.Item>
           <Grid.Item>
-          <div>评论</div>
+          <div>
+          <i className="iconfont" style={{fontSize:'25px'}}>&#xe891;<span style={{fontSize:'15px'}}>100</span></i>
+          </div>
           </Grid.Item>
           <Grid.Item onClick={() => {
                 setVisible1(true)
               }}>
-          <div>详情&gt;</div>
+          <div style={{fontSize:'18px'}}>详情&gt;</div>
           </Grid.Item>
         </Grid>
         <Popup
@@ -64,54 +71,117 @@ const demoSrc =
               onClose={() => {
                 setVisible1(false)
               }}
-              bodyStyle={{ height: '100vh' }}
+              bodyStyle={{ height: '100%'}}
             >
               <div>
-                <div style={{textAlign:'center'}}>详情</div>
+                <div style={{textAlign:'center',height:'50px',lineHeight:'50px',background:'pink',fontSize:'22px'}}>详情</div>
                 <div>
                 <Image src={demoSrc} />
                 </div>
                 <div className='content'>
                   <h1>打开老骥伏枥看电视剧弗兰克的健身房</h1>
-                  <p>sdfjklsdajfkldsjflkdsjflkadsjflkasdjfklsdjflksdjflkdsjfklsdjfkldsjflksdjfjdslkjf</p>
+                  <p style={{fontSize:'22px'}}>sdfjklsdajfkldsjflkdsjflkadsjflkasdjfklsdjflksdjflkdsjfklsdjfkldsjflksdjfjdslkjf</p>
                   <p className='day'>2023-03-18</p>
                 </div>
                 <div className='comments'>
                   <p>共100条评论</p>
                   <ul>
-                    <li>
+                    <li style={{marginBottom:'10px'}}>
                       <Space>
-                      <Avatar src={demoSrc} />
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
                       <div>
-                        <p>呱呱</p>
-                        <p>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
                       </div>
                       </Space>
                     </li>
                     <li>
                       <Space>
-                      <Avatar src={demoSrc} />
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
                       <div>
-                        <p>呱呱</p>
-                        <p>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
                       </div>
                       </Space>
                     </li>
                     <li>
                       <Space>
-                      <Avatar src={demoSrc} />
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
                       <div>
-                        <p>呱呱</p>
-                        <p>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
                       </div>
                       </Space>
                     </li>
                     <li>
                       <Space>
-                      <Avatar src={demoSrc} />
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
                       <div>
-                        <p>呱呱</p>
-                        <p>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
+                      </div>
+                      </Space>
+                    </li>
+                    <li>
+                      <Space>
+                      <Avatar src={demoSrc} style={{borderRadius:'50%'}}/>
+                      <div>
+                        <p style={{fontSize:'16px'}}>呱呱</p>
+                        <p style={{fontSize:'18px'}}>sdafjdsklfjdslkfjdslkfjkldsfjds</p>
                       </div>
                       </Space>
                     </li>
