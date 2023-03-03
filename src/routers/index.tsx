@@ -1,6 +1,10 @@
 import { Navigate } from 'react-router-dom'
 import Home from '../pages/Home'
-import User from '../pages/User'
+import Register from '../pages/Register/register'
+import Login from '../pages/Login/login'
+import My from '../pages/My/my'
+import Photos from '../pages/Photos'
+import AddPhoto from '../pages/AddPhoto'
 
 
 const routers = [
@@ -14,8 +18,24 @@ const routers = [
     element:<Home />
   },
   {
-    path:'/user',
-    element:<User/>
+    path:'/home/add',
+    element:<AddPhoto/>
+  },
+  {
+    path:'/login',
+    element:<Login/>
+  },
+  {
+    path:'/register',
+    element:<Register/>
+  },
+  {
+    path:'/my',
+    element:<My/>,
+  },
+  {
+    path:'/my/photos',
+    element:<Photos/>
   }
 ]
 
